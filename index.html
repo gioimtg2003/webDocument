@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tài Liệu C++ Cơ bản</title>
+    <meta name="description" content="Tài liệu C/C++">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav id="nav-bar">
+        <header>C++ Documentation</header>
+        <ul>
+            <li>
+                <a href="#C++_Introduction">C++ Introduction</a>
+            </li>
+            <li>
+                <a href="#C++_Get_Started">C++ Get Started</a>
+            </li>
+            <li>
+                <a href="#C++_Syntax">C++ Syntax</a>
+            </li>
+            <li>
+                <a href="#C++_Ouput">C++ Output</a>
+            </li>
+            <li>
+                <a href="#C++_Comments">C++ Comments</a>
+            </li>
+            <li>
+                <a href="#C++_Variables">C++ Variables</a>
+            </li>
+            <li>
+                <a href="#C++_Input">C++ Input</a>
+            </li>
+            <li>
+                <a href="#C++_Data_Types">C++ Data Types</a>
+            </li>
+            <li>
+                <a href="#C++_Operators">C++ Operators</a>
+            </li>
+            <li>
+                <a href="#C++_String">C++ Strings</a>
+            </li>
+            <li>
+                <a href="#C++_Math">C++ Math</a>
+            </li>
+            <li>
+                <a href="#C++_Conditions">C++ Conditions</a>
+            </li>
+            <li>
+                <a href="#C++_Switch">C++ Switch</a>
+            </li>
+            <li>
+                <a href="#C++_While_Loop">C++ While Loop</a>
+            </li>
+            <li>
+                <a href="#C++_For_Loop">C++ For Loop</a>
+            </li>
+            <li>
+                <a href="#C++_Break_and_Continue">C++ Break and Continue</a>
+            </li>
+            <li>
+                <a href="#C++_Arrays">C++Arrays</a>
+            </li>
+            <li>
+                <a href="#C++_Structures">C++ Structures </a>
+            </li>
+            <li>
+                <a href="#C++_Memory_Address">C++ Memory Address</a>
+            </li>
+            <li>
+                <a href="#C++_Pointers">C++ Pointers</a>
+            </li>
+        </ul>
+
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="C++_Introduction">
+            <header>C++ Introduction</header>
+
+            <article>
+                <p>C++ là ngôn ngữ đa nền tảng có thể được sử dụng để tạo các ứng dụng hiệu suất cao.</p>
+                <p>C++ được phát triển bởi Bjarne Stroustrup, như một phần mở rộng của ngôn ngữ C.</p>
+                <p>C++ cung cấp cho người lập trình khả năng kiểm soát cao đối với tài nguyên hệ thống và bộ nhớ.</p>
+                <p>Ngôn ngữ này đã được cập nhật 4 lần chính vào năm 2011, 2014, 2017 và 2020 thành C++11, C++14, C++17, C++20.</p>
+            </article>
+            <hr style="opacity: 0.5;">
+            <article>
+                <p>C++ là một trong những ngôn ngữ lập trình phổ biến nhất thế giới.</p>
+                <p>C++ có thể được tìm thấy trong các hệ điều hành, Giao diện người dùng đồ họa và các hệ thống nhúng ngày nay.</p>
+                <p>C++ là ngôn ngữ lập trình hướng đối tượng mang lại cấu trúc rõ ràng cho các chương trình và cho phép sử dụng lại mã, giảm chi phí phát triển.</p>
+                <p>C ++ có thể mang theo được và có thể được sử dụng để phát triển các ứng dụng có thể thích ứng với nhiều nền tảng.</p>
+                <p>C++ rất thú vị và dễ học!</p>
+                <p>Vì C++ gần với C , C# và Java nên lập trình viên dễ dàng chuyển sang C++ hoặc ngược lại. </p>
+            </article>
+        </section>
+        <hr style="opacity: 0.7; background-color: aquamarine;">
+        <section class="main-section" id="C++_Get_Started">
+            <header>C++ Getting Started</header>
+            <article>
+                <p>Để bắt đầu sử dụng C++, bạn cần hai thứ:</p>
+                <ul>
+                    <li>Một trình soạn thảo văn bản, như Notepad, để viết mã C++</li>
+                    <li>Trình biên dịch, như GCC, để dịch mã C++ sang ngôn ngữ mà máy tính sẽ hiểu</li>
+                </ul>
+                <p>Có nhiều trình soạn thảo văn bản và trình biên dịch để lựa chọn. Trong hướng dẫn này, chúng tôi sẽ sử dụng một IDE (xem bên dưới).</p>
+            </article>
+            <hr style="opacity: 0.5;">
+            <header>IDE cài đặt C++</header>
+            <article>
+                <p>Một IDE (Môi trường phát triển tích hợp) được sử dụng để chỉnh sửa và biên dịch mã.</p>
+                <p>Các IDE phổ biến bao gồm Code::Blocks, Eclipse và Visual Studio. Tất cả đều miễn phí và chúng có thể được sử dụng để chỉnh sửa và gỡ lỗi mã C++.</p>
+                <p>=>>IDE mình hay xài đó là
+                    <a href="https://code.visualstudio.com/" target="_blank"> Visual Studio Code</a>. Vì nó có nhiều tiện ích hỗ trợ cho nhiều ngôn ngữ lập trình rất bổ ích mình khuyên ae nên test thử nha.</p>
+            </article>
+            <hr style="opacity: 0.5;">
+            <header>Bắt đầu thử nghiệm nào</header>
+            <article>
+                <p>Hãy tạo tệp C++ đầu tiên cho mình nào.</p>
+                <p>Mở Visual Studio Code vài đi tới <b>File > New File</b>. Nhập tên file sau đó bấm <b>Enter</b> và lưu vào Folder cần lưu nha.</p>
+                <p>Để biên dịch mã C++, bạn cần một trình biên dịch.
+                    <a href="https://codecute.com/c/huong-dan-cai-dat-trinh-bien-dich-c-c-mingw-gcc.html" target="_blank"> Trong hướng dẫn này, chúng tôi sẽ sử dụng GCC.</a>
+                </p>
+                <p>Bắt đầu viết mã C++ nào. Mình sẽ tạo file <em><b>myfirstprogram.cpp</b></em> (Đuôi <em><b>.cpp</b></em> định dạng tệp C++ <em>Nôm na là như vậy</em>).
+                </p>
+            </article>
+            <code>
+                #include &#60;iostream&#62;<br>
+                using namespace std;<br>
+                int main() {<br>
+                    &emsp;&emsp;cout << "Hello World!";<br>
+                    &emsp;&emsp;return 0;<br>
+                }
+            </code>
+            <article>
+                <p>Nào đến phần chạy code thôi nào.</p>
+                <img src="1.jpg" alt="Bị sịt rồi">
+            </article>
+            <article>
+                <p>Để chạy được chương trình này thì <b>Click</b> vào cái hình tam giác ở trên góc phải hoặc tổ hợp phím <b>Ctrl + Alt + N</b>.</p>
+                <p><b>Kết quả nè:</b></p>
+                <img src="2.jpg" alt="Xịt cmnr">
+            </article>
+            <p><b>Xin chúc mừng bro !</b> Bây giờ bạn đã viết và thực thi chương trình C++ đầu tiên của mình.</p>
+
+        </section>
+        <hr style="opacity: 0.7; background-color: aquamarine;">
+        <section class="main-section" id="C++_Syntax">
+            <header>C++ Syntax</header>
+            <article>
+                <p>Dưới đây mình sẽ giải thích từng dòng code nhé.</p>
+                <p><b>Dòng 1:</b>
+                    <span>#include &#60;iostream&#62;</span> là thư viện tệp tiêu đề cho phép chúng ta làm việc với các đối tượng đầu vào và đầu ra, chẳng hạn như cout(được sử dụng trong dòng 5). Các tệp tiêu đề thêm chức năng cho các chương trình C++.
+                </p>
+                <p><b>Dòng 2:</b> <span>using namespace std</span> có nghĩa là chúng ta có thể sử dụng tên cho các đối tượng và biến từ thư viện chuẩn.</p>
+                <p><b>Dòng 3:</b> Một thứ khác luôn xuất hiện trong chương trình C++, đó là <span>int main()</span>. Đây được gọi là một <b>chức năng</b>. Bất kỳ mã nào bên trong dấu ngoặc nhọn của nó <span>{}</span> sẽ được thực thi.</p>
+                <p><b>Dòng 5:</b> <span>cout</span> (phát âm là "see-out") là một đối tượng được sử dụng cùng với toán tử chèn ( <span><<</span> ) để xuất/in văn bản. Trong ví dụ của chúng tôi, nó sẽ xuất ra "Xin chào thế giới".</p>
+                <p><b>Lưu ý:</b> Mọi câu lệnh C++ đều kết thúc bằng dấu chấm phẩy <span>;</span>.</p>
+                <p><b>Lưu ý:</b> Phần thân của <span>int main()</span> cũng có thể được viết là:<br><span>int main () { cout
+                    << "Hello World! "; return 0; }</span> </p>
+                <p><b>Hãy nhớ rằng:</b> Trình biên dịch bỏ qua khoảng trắng. Tuy nhiên, nhiều dòng làm cho mã dễ đọc hơn.</p>
+                <p><b>Dòng 6:</b> <span>return 0</span> kết thúc hàm main.</p>
+                <p><b>Dòng 7:</b> Đừng quên thêm dấu ngoặc nhọn đóng <span>}</span> để thực sự kết thúc chức năng chính.</p>
+            </article>
+            <hr style="opacity: 0.5;">
+            <header>Không dùng Namespace</header>
+            <article>
+                <p>Bạn có thể thấy một số chương trình C++ chạy mà không có thư viện <span>namespace std</span> . Dòng <span>using namespace std</span> này có thể được bỏ qua và thay thế bằng <span>std</span> từ khóa, theo sau là <span>::</span> toán tử
+                    đối với một số đối tượng:
+                </p>
+                <code>
+                    #include &#60;iostream&#62;<br>
+                        int main() {<br>
+                            &emsp;&emsp;std::cout << "Hello World!";<br>
+                            &emsp;&emsp;return 0;<br>
+                        }
+                </code>
+                <p>Kết quả vẫn là: <span>Hello World!</span> nhé</p>
+            </article>
+        </section>
+        <hr style="opacity: 0.7; background-color: aquamarine;">
+        <section class="main-section" id="C++_Ouput">
+            <header>C++ Output (In ra ngoài màn hình)</header>
+            <article>
+                <p>Đối tượng <span>Cout</span> cùng với toán tử <span><<</span> được sử dụng để in giá trị văn bản</p>
+                <p><b>Example:</b></p>
+                <p><span>std::cout << "Values";</span></p>
+                <p>Bạn có thể thêm bao nhiêu
+                    <span>Cout</span> tùy thích</p>
+                <p><b>Example:</b></p>
+                <code>#include &#60;iostream&#62;<br>
+                    int main() {<br>
+                        &emsp;&emsp;std::cout << "Hello World! 1";<br>
+                        &emsp;&emsp;std::cout << "Hello World! 2";<br>
+                        &emsp;&emsp;std::cout << "Hello World! 3";<br>
+                        &emsp;&emsp;return 0;<br>
+                    }</code>
+            </article>
+            <header>New Lines</header>
+            <article>
+                <p>Để chèn thêm 1 dòng mới ta sử dụng ký tự <span>\n</span></p>
+                <code>
+                    <code>#include &#60;iostream&#62;<br>
+                        int main() {<br>
+                            &emsp;&emsp;std::cout << "Hello World! 1\n";<br>
+                            &emsp;&emsp;std::cout << "Hello World! 2\n";<br>
+                            &emsp;&emsp;std::cout << "Hello World! 3";<br>
+                            &emsp;&emsp;return 0;<br>
+                        }</code>
+                </code>
+                <article>
+                    <p><b>Kết quả:</b></p>
+                    <div class="result">
+                        <p>Hello World! 1</p>
+                        <p>Hello World! 2</p>
+                        <p>Hello World! 3</p>
+                    </div>
+                </article>
+                <article>
+                    <p><b>Cách khác:</b> Thêm cái này vào cuối dòng <span>endl</span></p>
+                    <code>#include &#60;iostream&#62;<br>
+                        using namespace std;<br>
+                            int main() {<br>
+                                &emsp;&emsp;cout << "Hello World! 1" << endl;<br>
+                                &emsp;&emsp;cout << "Hello World! 2" << endl;<br>
+                                &emsp;&emsp;cout << "Hello World! 3";<br>
+                                &emsp;&emsp;return 0;<br>
+                            }
+                        </code>
+                    <p><b>Kết quả:</b></p>
+                    <div class="result">
+                        <p>Hello World! 1</p>
+                        <p>Hello World! 2</p>
+                        <p>Hello World! 3</p>
+                    </div>
+                </article>
+            </article>
+            <p>Ký tự xuống dòng ( <span>\n</span> ) được gọi là một <b>escape sequence</b> và nó buộc con trỏ thay đổi vị trí của nó về đầu dòng tiếp theo trên màn hình. Điều này dẫn đến một dòng mới.</p>
+            <table>
+                <caption>Ví dụ về các escape sequence</caption>
+                <thead>
+                    <tr>
+                        <th>Escape Sequence</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>\t</td>
+                        <td>Thêm khoảng trắng Tab</td>
+                    </tr>
+                    <tr>
+                        <td>\\</td>
+                        <td>Chèn ký tự (\)</td>
+                    </tr>
+                    <tr>
+                        <td>\"</td>
+                        <td>Chén ký tự (")</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <br>
+        <hr style="opacity: 0.7; background-color: aquamarine;">
+        <section class="main-section" id="C++_Comments">
+            <header>C++ Comments (Chú thích)</header>
+            <article>
+                <p>Nhận xét có thể được sử dụng để giải thích mã C++ và làm cho nó dễ đọc hơn. Nó cũng có thể được sử dụng để ngăn chặn việc thực thi khi kiểm tra mã thay thế. Nhận xét có thể là dòng đơn hoặc nhiều dòng.</p>
+            </article>
+            <hr style="opacity: 0.5; ">
+            <header>Single Line Comments</header>
+            <article>
+                <p>Nhận xét một dòng bắt đầu bằng hai dấu gạch chéo ( <span>//</span> ).</p>
+                <p>Bất kì văn bản nào ở phía sau <span>//</span> sẽ bị trình biên dịch bỏ qua(sẽ không được thực thi).</p>
+                <p><em>Ví dụ</em></p>
+                <code>
+                    <code>#include &#60;iostream&#62;<br>
+                        int main() {<br>
+                            &emsp;&emsp;std::cout << "Hello World!"; <span style="color:green;">// This is a comment</span><br>
+                            &emsp;&emsp;return 0;<br>
+                        }</code>
+                </code>
+                <p><b>Kết quả:</b></p>
+                <div class="result">
+                    <p>Hello World!</p>
+                </div>
+                <header>Multi Line Comments</header>
+                <article>
+                    <p>Nhận xét nhiều dòng bắt đầu bằng <span>/*</span> và kết thúc bằng <span>*/</span>.</p>
+                    <p>Bất kỳ văn bản nào giữa <span> /* </span> và <span>*/</span> sẽ bị trình biên dịch bỏ qua:</p>
+                    <code>
+                        <code>#include &#60;iostream&#62;<br>
+                            int main() {<br>
+                                &emsp;&emsp;<span style="color:green;">/* ABCXYZ </span><br>
+                                &emsp;&emsp;<span style="color:green;">ahiahiahihihiiihi */</span><br>
+                                &emsp;&emsp;std::cout << "Hello World!"; <span style="color:green;">/* This is a comment */</span><br>
+                                &emsp;&emsp;return 0;<br>
+                            }</code>
+                    </code>
+                    <p><b>Kết quả:</b></p>
+                    <div class="result">
+                        <p>Hello World!</p>
+                    </div>
+                </article>
+            </article>
+        </section>
+        <section class="main-section" id="C++_Variables">
+            <header></header>
+            <article></article>
+        </section>
+        <section class="main-section" id="C++_Input">
+            <header></header>
+            <article></article>
+        </section>
+        <section class="main-section" id="C++_Data_Types">
+            <header></header>
+            <article></article>
+        </section>
+        <section class="main-section" id="C++_Operators">
+            <header></header>
+            <article></article>
+        </section>
+        <section class="main-section" id="C++_String">
+            <header></header>
+            <article></article>
+        </section>
+        <section class="main-section" id="C++_Math">
+            <header></header>
+            <article></article>
+        </section>
+        <section class="main-section" id="C++_Conditions">
+            <header></header>
+            <article></article>
+        </section>
+        <section class="main-section" id="C++_Switch">
+            <header></header>
+            <article></article>
+        </section>
+        <section class="main-section" id="C++_While_Loop">
+            <header></header>
+            <article></article>
+        </section>
+        <section class="main-section" id="C++_For_Loop">
+            <header></header>
+            <article></article>
+        </section>
+        <section class="main-section" id="C++_Break_and_Continue">
+            <header></header>
+            <article></article>
+        </section>
+        <section class="main-section" id="C++_Break_and_Continue">
+            <header></header>
+            <article></article>
+        </section>
+        <section class="main-section" id="C++_Arrays">
+            <header></header>
+            <article></article>
+        </section>
+        <section class="main-section" id="C++_Structures">
+            <header></header>
+            <article></article>
+        </section>
+        <section class="main-section" id="C++_Memory_Address">
+            <header></header>
+            <article></article>
+        </section>
+        <section class="main-section" id="C++_Pointers">
+            <header></header>
+            <article></article>
+        </section>
+    </main>
+</body>
+
+</html>
+
+</html>
