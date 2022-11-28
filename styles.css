@@ -8,7 +8,7 @@ html {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-#nav-bar {
+#navbar {
     position: fixed;
     width: 300px;
     min-width: 290px;
@@ -22,14 +22,14 @@ nav {
     display: block;
 }
 
-#nav-bar>ul {
+#navbar>ul {
     height: 85%;
     padding: 0;
     overflow-y: auto;
     overflow-x: hidden;
 }
 
-#nav-bar li>a {
+#navbar li>a {
     display: block;
     color: #4d4e53;
     text-decoration: none;
@@ -38,14 +38,14 @@ nav {
     padding: 10px 20px;
 }
 
-#nav-bar li>a:hover {
+#navbar li>a:hover {
     background-color: #d4d8dd;
     box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     animation: animation1 0.5s linear;
 }
 
-#nav-bar li {
+#navbar li {
     padding: 10px;
     border-bottom: 1.5px solid rgb(55, 54, 54);
     margin-left: 1rem;
@@ -164,7 +164,7 @@ table td {
 }
 
 @media only screen and (max-width: 700px) {
-    #nav-bar {
+    #navbar {
         display: none;
     }
     #main-doc {
