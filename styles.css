@@ -29,6 +29,10 @@ nav {
     overflow-x: hidden;
 }
 
+#navbar>header:hover {
+    cursor: pointer;
+}
+
 #navbar li>a {
     display: block;
     color: #4d4e53;
@@ -45,8 +49,13 @@ nav {
     animation: animation1 0.5s linear;
 }
 
+#navbar li:hover {
+    transform: translateY(-0.5rem);
+    transition: 1s linear;
+}
+
 #navbar li {
-    padding: 10px;
+    padding: 0.7rem;
     border-bottom: 1.5px solid rgb(55, 54, 54);
     margin-left: 1rem;
     list-style: none;
