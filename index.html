@@ -310,13 +310,153 @@
                 </article>
             </article>
         </section>
+        <hr style="opacity: 0.7; background-color: rgb(0, 255, 170);">
         <section class="main-section" id="C++_Variables">
-            <header></header>
-            <article></article>
+            <header>C++ Variables</header>
+            <article>
+                <p>Biến là các thùng chứa để lưu trữ các giá trị dữ liệu.</p>
+                <p>Trong C++, có nhiều <b>loại</b> biến khác nhau (được định nghĩa bằng các từ khóa khác nhau), ví dụ:</p>
+                <ul>
+                    <li><b>int</b> - lưu trữ số nguyên (số nguyên), không có số thập phân, chẳng hạn như 123 hoặc -123</li>
+                    <li><b>double</b> - lưu trữ số dấu phẩy động, với số thập phân, chẳng hạn như 19,99 hoặc -19,99</li>
+                    <li><b>char</b> - lưu trữ các ký tự đơn, chẳng hạn như 'a' hoặc 'B'. Giá trị char được bao quanh bởi dấu nháy đơn</li>
+                    <li><b>string</b> - lưu trữ văn bản, chẳng hạn như "Xin chào thế giới". Giá trị chuỗi được bao quanh bởi dấu ngoặc kép</li>
+                    <li><b>bool</b> - lưu trữ các giá trị với hai trạng thái: đúng hoặc sai</li>
+                </ul>
+            </article>
+            <hr style="opacity: 0.5; background-color: rgb(13, 238, 13);">
+            <header>Creating Variables</header>
+            <article>
+                <p><b>Cú pháp: </b></p>
+                <code>&#60;type> &#60;variable_name> = &#60;value>;</code>
+                <p><em>Hoặc:</em></p>
+                <code>&#60;type> &#60;variable_name>;</code>
+                <p>Trong đó:</p>
+                <ul>
+                    <li><b>type</b> là kiểu dữ liệu trong C++ (<span>int</span>, <span>double</span>,...)</li>
+                    <li><b>variable_name</b> là tên biến, có thể đặt tên biến là: <em>x</em>. <em>Có thể xem cách đặt tên biến </em>
+                        <a href="https://codelearn.io/sharing/5-quy-uoc-dat-ten-thuong-dung-trong-cpp" target="_blank">tại đây</a>
+                    </li>
+                </ul>
+            </article>
+            <article>
+                <p><b>Ví dụ:</b></p>
+                <p>Tạo biến kiểu <span>int</span> có tên là myNum gán giá trị <b>15</b></p>
+                <code>
+                    int myNum =  <span style="color:rgb(255, 0, 0);">15</span>;<br>
+                    cout << myNum;
+                </code>
+                <p><em>Kết quả:</em></p>
+                <div class="result">
+                    <p>15</p>
+                </div>
+            </article>
+            <article>
+                <p>Bạn cũng có thể khai báo một biến mà không gán giá trị và gán giá trị sau:</p>
+                <code>
+                    int myNum;<br>
+                    myNum =  <span style="color:rgb(255, 0, 0);">15</span>;<br>
+                    cout << myNum;
+                </code>
+                <p><em>Kết quả:</em></p>
+                <div class="result">
+                    <p>15</p>
+                </div>
+            </article>
+            <article>
+                <p><b><em>Lưu ý:</em></b> nếu bạn gán một giá trị mới cho một biến hiện có, nó sẽ ghi đè lên giá trị trước đó:</p>
+                <p><b>Xem ví dụ dưới đây để hiểu hơn nhé:</b></p>
+                <code>
+                    int myNum = <span style="color:rgb(255, 0, 0);">15</span>;<br>
+                    myNum =  <span style="color:rgb(255, 0, 0);">10</span>;<br>
+                    cout << myNum;
+                </code>
+                <p><em>Kết quả:</em></p>
+                <div class="result">
+                    <p>10</p>
+                </div>
+            </article>
+            <hr style="opacity: 0.5; ">
+            <header>Khai báo nhiều biến</header>
+            <article>
+                <p>Để khai báo nhiều hơn một biến <b>cùng loại</b> , hãy sử dụng danh sách được phân tách bằng dấu phẩy:</p>
+                <code>
+                <span style="color: rgb(0,175,255);">int</span> x = <span style="color:rgb(255, 0, 0);">5</span>, y = <span style="color:rgb(255, 0, 0);">6</span>, z = <span style="color:rgb(255, 0, 0);">50</span>;<br>
+                cout << x + y + z;
+            </code>
+                <p><em>Kết quả:</em></p>
+                <div class="result">
+                    <p>61</p>
+                </div>
+            </article>
+            <hr style="opacity: 0.5; ">
+            <header>Một giá trị cho nhiều biến</header>
+            <article>
+                <p><em>Ví dụ:</em></p>
+                <code>
+                <span style="color: rgb(0,175,255);">int</span> x = <span style="color:rgb(255, 0, 0);">5</span>, y = <span style="color:rgb(255, 0, 0);">6</span>, z = <span style="color:rgb(255, 0, 0);">50</span>;<br>
+                x = y = z = <span style="color:rgb(255, 0, 0);">0</span>;<br>
+                cout << x + y + z;
+            </code>
+                <p><em>Kết quả:</em></p>
+                <div class="result">
+                    <p>0</p>
+                </div>
+            </article>
+            <hr style="opacity: 0.5;">
+            <header>Hằng số</header>
+            <article>
+                <p><em>Hằng số</em> nó giống như một biến có giá trị cố định và không thể thay đổi.</p>
+                <p><b>Cú pháp:</b></p>
+                <code>
+                <span style="color: rgb(0,175,255);">const</span> <span style="color: rgb(0,175,255);">data_type</span> <span style="color: rgb(0,175,255);">constant_name</span> = <span style="color: rgb(0,175,255);">value</span>;
+            </code>
+                <p><em>Ví dụ:</em></p>
+                <code>
+                <span style="color: rgb(0,175,255);">const</span> <span style="color: rgb(0,175,255);">int</span> myNum = <span style="color:rgb(255, 0, 0);">15</span>;<br>
+                myNum = <span style="color:rgb(255, 0, 0);">10</span>;<br>
+                cout << myNum;
+            </code>
+                <p><em>Kết quả:</em></p>
+                <div class="result">
+                    <p>15</p>
+                </div>
+            </article>
         </section>
+        <hr style="opacity: 0.5; background-color: rgb(13, 238, 13);">
         <section class="main-section" id="C++_Input">
-            <header></header>
-            <article></article>
+            <header>C++ Input</header>
+            <article>
+                <p>Bạn đã học <span>cout</span> được sử dụng để xuất (in) các giá trị. Bây giờ chúng ta sẽ sử dụng <span>cin</span> để lấy đầu vào của người dùng.</p>
+                <p><span>cin</span> là một biến được xác định trước để đọc dữ liệu từ bàn phím với toán tử trích xuất ( <span>>></span> ).</p>
+                <p>Trong ví dụ sau, người dùng có thể nhập một số, số này được lưu trong biến <span>x</span> . Sau đó, chúng tôi in giá trị của <span>x</span>:</p>
+                <code>
+                <span style="color: rgb(0,175,255);">int</span> x;<br>
+                cout << <span style="color:rgb(255, 0, 0);">"Enter a number: "</span>;<br>
+                cin >> x;<br>
+                cout << <span style="color:rgb(255, 0, 0);">"You entered: "</span> << x;
+            </code>
+                <p><em>Kết quả:</em></p>
+                <div class="result">
+                    <p>Enter a number: 10<br>You entered: 10</p>
+                </div>
+            </article>
+            <header>Tạo một máy tính đơn giản</header>
+            <article>
+                <p>Trong ví dụ này, người dùng phải nhập hai số. Sau đó, chúng tôi in tổng bằng cách tính (cộng) hai số:</p>
+                <code>
+                <span style="color: rgb(0,175,255);">int</span> x, y;<br>
+                <span style="color: rgb(0,175,255);">int</span> sum;<br>
+                cout << <span style="color:rgb(255, 0, 0);">"Enter two numbers to add: "</span>;<br>
+                cin >> x >> y;<br>
+                sum = x + y;<br>
+                cout << <span style="color:rgb(255, 0, 0);">"Sum is: "</span> << sum;
+            </code>
+                <p><em>Kết quả:</em></p>
+                <div class="result">
+                    <p>Enter two numbers to add: 10 20<br>Sum is: 30</p>
+                </div>
+            </article>
         </section>
         <section class="main-section" id="C++_Data_Types">
             <header></header>

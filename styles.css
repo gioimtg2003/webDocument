@@ -43,7 +43,7 @@ nav {
 }
 
 #navbar li>a:hover {
-    background-color: #8da9cb;
+    background-color: #d9e7f6;
     box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     animation: animation1 0.5s linear;
