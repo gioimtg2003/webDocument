@@ -477,8 +477,8 @@
                 <span style="color: rgb(0,175,255);">bool</span> isFishTasty = <span style="color: rgb(0,175,255);">false</span>;<br>
                 <span style="color: rgb(0,175,255);">char</span> myGrade = <span style="color:rgb(255, 0, 0);">'A'</span>;<br>
                 <span style="color: rgb(0,175,255);">int</span> myAge = <span style="color:rgb(255, 0, 0);">15</span>;<br>
-                <span style="color: rgb(0,175,255);">float</span> myWeight = <span style="color:rgb(255, 0, 0);">70.5</span>;<br>
-                <span style="color: rgb(0,175,255);">double</span> myHeight = <span style="color:rgb(255, 0, 0);">1.75</span>;
+                <span style="color: rgb(0,175,255);">float</span> myWeight = <span style="color:rgb(255, 0, 0);">51.5</span>;<br>
+                <span style="color: rgb(0,175,255);">double</span> myHeight = <span style="color:rgb(255, 0, 0);">1.62</span>;
                 </code>
             </article>
         </section>
@@ -487,23 +487,287 @@
             <header>C++ Operators</header>
             <article>
                 <p>Các toán tử được sử dụng để thực hiện các thao tác trên các biến và giá trị.</p>
-
+                <p>Trong ví dụ bên dưới, chúng tôi sử dụng <span>+</span> toán tử để <b>cộng</b> hai giá trị lại với nhau:</p>
+                <p><em>Ví dụ</em></p>
+                <code>
+                <span style="color: rgb(0,175,255);">int</span> x = <span style="color:rgb(255, 0, 0);">5</span>;<br>
+                <span style="color: rgb(0,175,255);">int</span> y = <span style="color:rgb(255, 0, 0);">6</span>;<br>
+                <span style="color: rgb(0,175,255);">int</span> sum = x + y;<br>
+                cout << sum;
+            </code>
+                <p><em>Kết quả:</em></p>
+                <div class="result">
+                    <p>11</p>
+                </div>
+                <p>C++ chia các toán tử thành các nhóm sau: (<em>ở đây mình sẽ để link cho các bạn tham khảo nha</em>)</p>
+                <ul>
+                    <li>
+                        <a href="https://viettuts.vn/lap-trinh-cpp/toan-tu-trong-cpp#goto-h2-1" target="_blank">Toán tử số học</a>
+                    </li>
+                    <li>
+                        <a href="https://viettuts.vn/lap-trinh-cpp/toan-tu-trong-cpp#goto-h2-5" target="_blank">Toán tử gán</a>
+                    </li>
+                    <li>
+                        <a href="https://viettuts.vn/lap-trinh-cpp/toan-tu-trong-cpp#goto-h2-3" target="_blank">Toán tử logic</a>
+                    </li>
+                    <li>
+                        <a href="https://viettuts.vn/lap-trinh-cpp/toan-tu-trong-cpp#goto-h2-2" target="_blank">Toán tử so sánh</a>
+                    </li>
+                </ul>
             </article>
         </section>
+        <hr style="opacity: 0.5; background-color: rgb(13, 238, 13);">
         <section class="main-section" id="C++_String">
-            <header></header>
-            <article></article>
+            <header>C++ String</header>
+            <article>
+                <p>Chuỗi được sử dụng để lưu trữ văn bản.</p>
+                <p>Một <span>string</span> biến chứa một tập hợp các ký tự được bao quanh bởi dấu ngoặc kép:</p>
+                <p><em>Ví dụ:</em> Tạo một biến kiểu <span>string</span> và gán cho nó một giá trị:</p>
+                <code>
+                <span style="color: rgb(0,175,255);">string</span> greeting = <span style="color:rgb(255, 0, 0);">"Hello"</span>;
+                </code>
+                <p>Để sử dụng chuỗi, bạn phải bao gồm tệp tiêu đề bổ sung trong mã nguồn, <span>&#60;string></span> thư viện:</p>
+                <code>
+                #include <span style="color:rgb(255, 0, 0);">&#60;string></span><br>
+                ...<br>
+                string greeting = <span style="color: red;">"Hello"</span>;
+                </code>
+            </article>
+            <hr style="opacity: 0.5;">
+            <header>Nối chuỗi</header>
+            <article>
+                <p>Toán tử <span>+</span> có thể được sử dụng giữa các chuỗi để cộng chúng lại với nhau để tạo thành một chuỗi mới. Điều này được gọi là <b>nối</b> :</p>
+                <p><em>Ví dụ:</em></p>
+                <code>
+                string firstName = <span style="color: red;">"Nguyen Cong"</span>;<br>
+                string lastName = <span style="color: red;">"Gioi"</span>;<br>
+                string fullName = firstName + <span style="color: red;">" "</span> + lastName;<br>
+                cout << fullName;
+                </code>
+                <p><em>Kết quả:</em></p>
+                <div class="result">
+                    <p>Nguyen Cong Gioi</p>
+                </div>
+            </article>
+            <hr style="opacity: 0.5;">
+            <header>Append</header>
+            <article>
+                <p>Một chuỗi trong C++ thực sự là một <b>đối tượng</b>, chứa các hàm có thể thực hiện một số thao tác nhất định trên chuỗi. Ví dụ: bạn cũng có thể nối các chuỗi bằng hàm <span>append()</span> :</p>
+                <p><em>Ví dụ:</em></p>
+                <code>
+                string firstName = <span style="color: red;">"Nguyen Cong"</span>;<br>
+                string lastName = <span style="color: red;">"Gioi"</span>;<br>
+                string fullName = firstName;<br>
+                fullName.append(<span style="color: red;">" "</span>);<br>
+                fullName.append(lastName);<br>
+                cout << fullName;
+                </code>
+                <p><em>Kết quả:</em></p>
+                <div class="result">
+                    <p>Nguyen Cong Gioi</p>
+                </div>
+                <p>Ví dụ trên ta nối lần lượt <span>" "</span> và <span>lastName</span> vào sau <span>firstName</span>.</p>
+            </article>
+            <hr style="opacity: 0.5;">
+            <header>Số và chuỗi trong C++</header>
+            <article>
+                <p><b><em>Lưu ý:</em></b> C++ sử dụng <span>+</span> toán tử cho cả <b>phép cộng</b> và <b>phép nối</b> .</p>
+                <p>Nếu bạn <b>cộng</b> hai số kết quả sẽ như sau:</p>
+                <code>
+                int x = 10;<br>
+                int y = 20;<br> 
+                int z = x + y;<br>
+                cout << z;
+                </code>
+                <p><em>Kết quả:</em></p>
+                <div class="result">
+                    <p>30</p>
+                </div>
+                <p>Nếu bạn thêm hai chuỗi, kết quả sẽ là nối chuỗi:</p>
+                <code>
+                string x = <span style="color: red;">"10"</span>;<br>
+                string y = <span style="color: red;">"20"</span>;<br>
+                cout <<  x + y;
+            
+                </code>
+                <p><em>Kết quả:</em></p>
+                <div class="result">
+                    <p>1020</p>
+                </div>
+                <p>Nếu bạn <b>cộng</b> số với chuỗi lại nhau thì tất nhiên nó sẽ bị lỗi:</p>
+                <code>
+                string x = <span style="color: red;">"10"</span>;<br>
+                int y = 20;<br>
+                cout << x + y;
+                </code>
+                <p><em>Kết quả:</em></p>
+                <div class="result">
+                    <p>error: invalid operands of types 'const char*' and 'int' to binary 'operator+'</p>
+                </div>
+            </article>
+            <hr style="opacity: 0.5;">
+            <header>Độ dài chuỗi</header>
+            <article>
+                <p>Để lấy độ dài của chuỗi ta sử dụng hàm <span>length()</span> hoặc có thể <span>size()</span>:</p>
+                <code>
+                string txt = <span style="color: red;">"Hello World"</span>;<br>
+                cout << txt.length(); <br>
+                    cout << txt.size();
+                </code>
+                <p><em>Kết quả:</em></p>
+                <div class="result">
+                    <p>11</p>
+                    <p>11</p>
+                </div>
+            </article>
+            <hr style="opacity: 0.5;">
+            <header>Truy cập ký tự trong chuỗi</header>
+            <article>
+                <p>Để truy cập ký tự trong chuỗi ta sử dụng cú pháp <span>string[index]</span> . Ví dụ:</p>
+                <code>
+                string txt = <span style="color: red;">"Hello World"</span>;<br>
+                cout << txt[0];
+                </code>
+                <p><em>Kết quả:</em></p>
+                <div class="result">
+                    <p>H</p>
+                </div>
+                <p><b><em>Lưu ý:</em></b> Chỉ số của chuỗi bắt đầu từ 0, không phải 1.</p>
+            </article>
+            <hr style="opacity: 0.5;">
+            <header>Thay đổi ký tự trong chuỗi</header>
+            <article>
+                <p>Để thay đổi ký tự trong chuỗi ta sử dụng cú pháp <span>string[index] = newChar</span> . Ví dụ:</p>
+                <code>
+                string txt = <span style="color: red;">"Hello World"</span>;<br>
+                txt[0] = <span style="color: red;">'J'</span>;<br>
+                cout << txt;
+                </code>
+                <p><em>Kết quả:</em></p>
+                <div class="result">
+                    <p>Jello World</p>
+                </div>
+            </article>
+            <hr style="opacity: 0.5;">
+            <header>Thay đổi chuỗi</header>
+            <article>
+                <p>Để thay đổi chuỗi ta sử dụng cú pháp <span>string = newString</span> . Ví dụ:</p>
+                <code>
+                string txt = <span style="color: red;">"Hello World"</span>;<br>
+                txt = <span style="color: red;">"Welcome"</span>;<br>
+                cout << txt;
+                </code>
+                <p><em>Kết quả:</em></p>
+                <div class="result">
+                    <p>Welcome</p>
+                </div>
+            </article>
+            <hr style="opacity: 0.5;">
+            <header>Ký tự đặc biệt</header>
+            <article>
+                <p>Bởi vì các chuỗi phải được viết trong <b>dấu ngoặc kép</b>, C++ sẽ hiểu sai chuỗi này và tạo ra lỗi:
+                    <code>
+                string txt = <span style="color: red;">"We are the so-called "Vikings" from the north."</span>;
+                    </code>
+                    <p>Giải pháp: thêm ký tự <span>\</span> trước ký tự đặc biệt.</p>
+                    <code>
+                string txt = <span style="color: red;">"We are the so-called \"Vikings\" from the north."</span>;
+                    </code>
+                    <p><b><em>Lưu ý:</em></b> Ký tự <span>\</span> cũng là một ký tự đặc biệt, nên nếu bạn muốn in ra ký tự <span>\</span> thì bạn phải thêm thêm một ký tự <span>\</span> nữa.</p>
+                    <code>
+                string txt = <span style="color: red;">"The character \\ is called backslash."</span>;
+                    </code>
+                </p>
+            </article>
+            <hr style="opacity: 0.5;">
+            <header>Nhập vào một chuỗi</header>
+            <article>
+                <p>Để nhập vào một chuỗi ta sử dụng hàm <span>getline()</span> . Ví dụ:</p>
+                <code>
+                string txt;<br>
+                cout << <span style="color: red;">"Enter your name: "</span>;<br>
+                getline(cin, txt);<br>
+                cout << <span style="color: red;">"Hello "</span> << txt;
+                </code>
+                <p><em>Kết quả:</em></p>
+                <div class="result">
+                    <p>Enter your name: <span style="color: red;">"Nguyen Van A"</span></p>
+                    <p>Hello Nguyen Van A</p>
+                </div>
+            </article>
         </section>
+        <hr style="opacity: 0.5; background-color: rgb(13, 238, 13);">
         <section class="main-section" id="C++_Math">
-            <header></header>
-            <article></article>
+            <header>C++ math</header>
+            <article>
+                <p>C++ có nhiều hàm cho phép bạn thực hiện các tác vụ toán học trên các con số.</p>
+                <p>Ở đây mình sẽ để link cho các bạn tham khảo:
+                    <a href="https://viettuts.vn/lap-trinh-cpp/ham-math-trong-cpp"> Click vào đây</a>
+                </p>
+            </article>
         </section>
+        <hr style="opacity: 0.5; background-color: rgb(13, 238, 13);">
         <section class="main-section" id="C++_Conditions">
-            <header></header>
-            <article></article>
+            <header>C++ Conditions</header>
+            <article>
+                <p>Bạn đã biết rằng C++ hỗ trợ các điều kiện logic thông thường từ toán học:</p>
+                <ul>
+                    <li>Nhỏ hơn: <span>a < b</span></li>
+                    <li>Nhỏ hơn hoặc bằng: <span>a <= b</span></li>
+                    <li>Lớn hơn: <span>a > b</span></li>
+                    <li>Lớn hơn hoặc bằng: <span>a >= b</span></li>
+                    <li>Bằng <span>a==b</span></li>
+                    <li>Không bằng: <span>a!=b</span></li>
+                </ul>
+                <p>Bạn có thể sử dụng các <b>điều kiện</b> này để thực hiện các hành động khác nhau cho các quyết định khác nhau.</p>
+                <p><b>If thiếu:</b></p>
+                <img src="3.jpg" alt="">
+                <p><em>Kết quả:</em></p>
+                <div class="result">
+                    <p>x = 1</p>
+                </div>
+                <p><b>If đủ:</b></p>
+                <img src="4.jpg" alt="">
+                <p><em>Kết quả:</em></p>
+                <div class="result">
+                    <p>x != 1</p>
+                </div>
+                <p>Trong <b>If</b> có thể có nhiều dòng lệnh.</p>
+                <code>
+                    int x = 1;<br>
+                    if(x==1){<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;cout << <span style="color: red;">"x = 1"</span>;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;cout << <span style="color: red;">"1 la so nguyen duong"</span>;<br>
+                    }else<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;cout << <span style="color: red;">"x != 1"</span>;
+                </code>
+                <p><em>Kết quả:</em></p>
+                <div class="result">
+                    <p>x = 1</p>
+                    <p>1 la so nguyen duong</p>
+                </div>
+                <p>Nếu kiểm tra nhiều điều kiện hơn thì ta sử dụng cấu trúc <b>if ... else if</b></p>
+                <p><em>Ví dụ: </em></p>
+                <code>
+                    int x = 3;<br>
+                    if(x==1){<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;cout << <span style="color: red;">"x = 1"</span>;<br>
+                    }else if(x==2){<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;cout << <span style="color: red;">"x = 2"</span>;<br>
+                    }else if(x==3){<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;cout << <span style="color: red;">"x = 3"</span>;<br>
+                    }else{<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;cout << <span style="color: red;">"x khong phai 1, 2, 3"</span>;<br>
+                    }
+                </code>
+                <p><em>Kết quả:</em></p>
+                <div class="result">
+                    <p>x = 3</p>
+                </div>
+            </article>
         </section>
         <section class="main-section" id="C++_Switch">
-            <header></header>
+            <header>C++ Switch</header>
             <article></article>
         </section>
         <section class="main-section" id="C++_While_Loop">
