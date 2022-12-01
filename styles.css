@@ -116,9 +116,11 @@ header {
     height: 80%;
     border-radius: 10px;
     min-width: 300px;
+    object-fit: cover;
 }
 
-#main-doc p span {
+#main-doc p span,
+li span {
     display: inline-block;
     color: rgb(249, 88, 88);
     background-color: rgb(243, 242, 173);

@@ -706,7 +706,7 @@
                 </p>
             </article>
         </section>
-        <hr style="opacity: 0.5; background-color: rgb(13, 238, 13);">
+        <hr style="opacity: 0.5; background-color: rgb(238, 13, 13);">
         <section class="main-section" id="C++_Conditions">
             <header>C++ Conditions</header>
             <article>
@@ -766,26 +766,145 @@
                 </div>
             </article>
         </section>
+        <hr style="opacity: 0.5; background-color: rgb(13, 238, 13);">
         <section class="main-section" id="C++_Switch">
             <header>C++ Switch</header>
-            <article></article>
+            <article>
+                <p>Sử dụng <span>switch</span> câu lệnh để chọn một trong nhiều khối lệnh sẽ được thực thi.</p>
+                <p><em>Cú pháp:</em></p>
+                <code>
+                    switch(expression){<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;case value1:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//code block;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;case value2:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//code block;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;case value3:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//code block;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;default:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//code block;<br>
+                    }
+                </code>
+                <p><em>Ví dụ:</em></p>
+                <code>
+                    int x = 2;<br>
+                    switch(x){<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;case 1:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout << <span style="color: red;">"x = 1"</span>;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;case 2:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout << <span style="color: red;">"x = 2"</span>;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;case 3:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout << <span style="color: red;">"x = 3"</span>;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;default:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cout << <span style="color: red;">"x khong phai 1, 2, 3"</span>;<br>
+                    }
+                </code>
+                <p><em>Kết quả:</em></p>
+                <div class="result">
+                    <p>x = 2</p>
+                </div>
+                <ul>
+                    <li><span>Expression</span> là một biến (hoặc biểu thức) có giá trị kiểu số nguyên (char, short, int, long, int32_t, enum, ...).</li>
+                    <li><span>Value1, value2, value3</span> là giá trị để so sánh với <b>Expression</b> ban đầu.</li>
+                    <li><span>Code block</span> là một khối lệnh được thực thi nếu <b>Expression</b> bằng <b>Value1, value2, value3</b>.</li>
+                    <li><span>Default</span> Đây là giá trị mặc định, khi không có giá trị của <b>expression</b> nào thõa điều kiện, thì <b>code block</b> bên trong sẽ được thực thi</li>
+                    <li><span>Break</span> có thể sử dụng hoặc không. Nhưng khuyên mọi người nên dùng, điều này sẽ dừng việc thực thi thêm mã và kiểm tra trường hợp bên trong khối. Khi một trận đấu được tìm thấy và công việc đã hoàn thành, đã đến lúc nghỉ
+                        giải lao. Không cần phải thử nghiệm thêm.</li>
+                </ul>
+            </article>
         </section>
+        <hr style="opacity: 0.5; background-color: rgb(13, 238, 13);">
         <section class="main-section" id="C++_While_Loop">
-            <header></header>
-            <article></article>
+            <header>C++ While Loop</header>
+            <article>
+                <p>Các vòng lặp có thể thực thi một khối lệnh miễn là đạt được một điều kiện cụ thể.</p>
+                <p>Vòng lặp tiện dụng vì chúng tiết kiệm thời gian, giảm lỗi và giúp mã dễ đọc hơn.</p>
+            </article>
+            <header>Vòng lặp while</header>
+            <article>
+                <p>Vòng <span>while</span> lặp lặp qua một khối mã với điều kiện là <span>true</span>:</p>
+                <code>
+                    while (condition) {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;// code block to be executed<br>
+                    }
+                </code>
+                <p><em>Ví dụ:</em></p>
+                <code>
+                    int i = 0;<br>
+                    while (i < 5) {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;cout << i;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;i++;<br>
+                    }
+                </code>
+                <p><em>Kết quả:</em></p>
+                <div class="result">
+                    <p>01234</p>
+                </div>
+                <img src="5.jpg" alt="">
+            </article>
+            <header>Vòng lặp do...while</header>
+            <article>
+                <p>Vòng <span></span> lặp là một biến thể của <span>while</span> vòng lặp. Vòng lặp này sẽ thực thi khối mã một lần, trước khi kiểm tra xem điều kiện có đúng không, sau đó nó sẽ lặp lại vòng lặp miễn là điều kiện còn đúng.</p>
+                <code>
+                    do {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;// code block to be executed<br>
+                    } while (condition);
+                </code>
+
+                <p><em>Ví dụ:</em></p>
+                <code>
+                    int i = 0;<br>
+                    do {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;cout << i;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;i++;<br>
+                    } while (i < 5);
+                </code>
+                <p><em>Kết quả:</em></p>
+                <div class="result">
+                    <p>01234</p>
+                </div>
+
+            </article>
         </section>
+        <hr style="opacity: 0.5; background-color: rgb(13, 238, 13);">
         <section class="main-section" id="C++_For_Loop">
-            <header></header>
-            <article></article>
+            <header>C++ For Loop</header>
+            <article>
+                <p>Khi bạn biết chính xác số lần bạn muốn lặp qua một khối mã, hãy sử dụng <span>for</span> vòng lặp thay vì <span>while</span> vòng lặp:</p>
+                <code>
+                    for (statement 1; statement 2; statement 3) {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;// code block to be executed<br>
+                    }
+                </code>
+                <p><b>Statement 1</b> được thực thi (một lần) trước khi thực thi khối mã.</p>
+                <p><b>Statement 2</b> xác định điều kiện để thực thi khối mã.</p>
+                <p><b>Statement 3</b>được thực hiện (mỗi lần) sau khi khối mã đã được thực thi.</p>
+                <p><em>Ví dụ:</em></p>
+                <code>
+                    for (int i = 0; i < 5; i++) {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;cout << i << <span style="color:red;">"\n"</span> ;<br> }
+                </code>
+                <p><em>Kết quả:</em></p>
+                <div class="result">
+                    <p>0</p>
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                </div>
+            </article>
         </section>
+        <hr style="opacity: 0.5; background-color: rgb(13, 238, 13);">
         <section class="main-section" id="C++_Break_and_Continue">
             <header></header>
             <article></article>
         </section>
-        <section class="main-section" id="C++_Break_and_Continue">
-            <header></header>
-            <article></article>
-        </section>
+
         <section class="main-section" id="C++_Arrays">
             <header></header>
             <article></article>
