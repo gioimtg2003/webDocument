@@ -225,7 +225,7 @@ table td {
     transition: 0.3s linear;
 }
 
-.icon img:hover::after {
+.icon:hover::after {
     opacity: 1;
     transition: 0.3s linear;
 }
