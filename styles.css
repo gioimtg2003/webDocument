@@ -43,15 +43,15 @@ nav {
 }
 
 #navbar>ul:hover> :not(:hover) {
-    opacity: .8;
-    transform: scale(0.99);
+    opacity: 0.6;
+    transform: scale(0.9);
 }
 
 #navbar li>a:hover {
     background-color: #d9e7f6;
     box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    animation: animation1 0.5s linear;
+    animation: animation1 0.2s linear;
 }
 
 #navbar li:hover {
